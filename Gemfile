@@ -50,3 +50,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Seed db
+gem 'faker'

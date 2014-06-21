@@ -1,4 +1,9 @@
 Cyti::Application.routes.draw do
+  get "events/index"
+  get "events/show"
+  get "events/create"
+  get "events/update"
+  get "events/destroy"
   #/api
   namespace :api, defaults: {format: 'json'} do
     #/api/v1

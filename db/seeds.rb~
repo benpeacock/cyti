@@ -5,18 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-require 'faker'
-
-5.times do
-  Event.create(
-    address: Faker::Address.street_address,
-    endDate: Faker::Number.number(8),
-    imageThumbUrl: Faker::Internet.url,
-    shortDescription: Faker::Lorem.sentence,
-    title: Faker::Lorem.word
-  )
-end
-
-puts "Seed finished"
-puts "#{Event.count} events created"
