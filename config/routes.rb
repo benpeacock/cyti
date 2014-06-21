@@ -1,4 +1,12 @@
 Cyti::Application.routes.draw do
+  #/api
+  namespace :api, defaults: {format: 'json'} do
+    #/api/v1
+    namespace :v1 do
+      resources :events
+    end
+  end
+
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
