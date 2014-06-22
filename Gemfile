@@ -53,3 +53,6 @@ end
 
 # Seed db
 gem 'faker'
+
+# Use rails_admin for backend admin
+gem 'rails_admin'

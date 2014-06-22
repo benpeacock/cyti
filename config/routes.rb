@@ -1,4 +1,5 @@
 Cyti::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get "events/index"
   get "events/show"
   get "events/create"
