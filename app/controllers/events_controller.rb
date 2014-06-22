@@ -14,7 +14,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to @event, notice: 'Answer was successfully created'
+        format.html { redirect_to @event, notice: 'Answer was successfully created' }
       else
         format.html { render action: 'new' }
       end
